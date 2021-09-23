@@ -1,0 +1,16 @@
+{
+  "name": "subgraph_defi",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ subgraph_defi",
+    "create-local": "graph create --node http://localhost:8020/ subgraph_defi",
+    "remove-local": "graph remove --node http://localhost:8020/ subgraph_defi",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 subgraph_defi"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.22.1",
+    "@graphprotocol/graph-ts": "0.22.1"
+  }
+}
